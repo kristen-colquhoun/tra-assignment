@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Race Details</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <script src="../assets/js/core/helpers.js"></script>
+    <script src="../assets/js/core/storage.js"></script>
+    <script src="../assets/js/modules/races.js"></script>
+</head>
+
+<body>
+    <!-- Javascript adds partials in to here -->
+    <div class="container">
+        <div class="race-container">
+            <div id="race-details">
+                <h5><span id="raceName"></span></h5>
+                <p><strong>Distance:</strong> <span id="raceDistance"></span></p>
+                <p><strong>Age Category:</strong> <span id="raceCategory"></span></p>
+                <p><strong>Venue:</strong> <span id="raceVenue"></span></p>
+            </div>
+
+            <div id="race-map">
+
+            </div>
+        </div>
+    </div>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMbnSYGGJzvtXgZFNX0kw05QaYgCI42-k&callback=races.mapApiLoaded">
+    </script>
+</body>
+
+</html>

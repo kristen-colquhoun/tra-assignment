@@ -1,0 +1,68 @@
+<!-- Login Form -->
+<form id="loginForm">
+    <h3>Enter your details</h3>
+    <span class="inputLabel">
+        Title
+    </span>
+    <div class="wrapInput" id="title">
+        <select name="title" class="selectTitle">
+            <option value="Mr">Mr</option>
+            <option value="Miss">Miss</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Dr">Dr</option>
+        </select>
+        <div class="validateIcon">
+            <i class="fas fa-check"></i>
+        </div>
+    </div>
+    <span class="inputLabel">
+        First Name
+    </span>
+    <div class="wrapInput" id="firstName">
+        <input name="firstName" type="text">
+        <div class="validateIcon">
+            <i class="fas fa-exclamation"></i>
+        </div>
+    </div>
+    <span class="inputLabel">
+        Last Name
+    </span>
+    <div class="wrapInput" id="lastName">
+        <input name="lastName" type="text">
+        <div class="validateIcon">
+            <i class="fas fa-exclamation"></i>
+        </div>
+    </div>
+    <span class="inputLabel">
+        TRA Number
+    </span>
+    <div class="wrapInput" id="traNumber">
+        <input name="traNumber" type="text">
+        <div class="validateIcon">
+            <i class="fas fa-exclamation"></i>
+        </div>
+    </div>
+    <span class="inputLabel">
+        Date of Birth
+    </span>
+    <div class="wrapInput" id="dob">
+        <input name="dob" type="date">
+        <div class="validateIcon">
+            <i class="fas fa-exclamation"></i>
+        </div>
+    </div>
+    <span class="inputLabel">
+        Gender
+    </span>
+    <div class="wrapGender" id="gender">
+        <div class="radioMale">
+            <input type="radio" name="gender" value="male" checked>
+            <label>Male</label>
+        </div>
+        <div class="radioFemale">
+            <input type="radio" name="gender" value="female">
+            <label>Female</label>
+        </div>
+    </div>
+    <input type="button" class="button-primary" onclick="auth.login()" value="Submit">
+</form>
